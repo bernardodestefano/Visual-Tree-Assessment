@@ -10,3 +10,13 @@ This application allows the compilation of VTA sheet via mobile devices, like ta
 I developed it following the Responsive Web Design (RWD) to provide an optimal viewing and interaction experience ( easy reading and navigation with a minimum of resizing, panning, and scrolling ) across a wide range of devices (from desktop computer monitors to mobile phones).
 I used Bootstrap as front-end framework to achieve this goal.
 This application is designed to be usable even in offline mode, using LocalStorage to store data locally, then push them to the server once back online.
+
+## Contribution
+
+Fork the project, add your feature (or fix your bug) and open a pull request OR
+
+[Open an issue](https://github.com/bernardodestefano/AssettoCorsaApps/issues/new) if you find find or if you would like to have extra fields or changes
+
+## License
+
+Available under the [MIT license](http://opensource.org/licenses/mit-license.php).
