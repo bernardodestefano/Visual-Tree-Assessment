@@ -3,7 +3,7 @@ $( document ).ready(function() {
 
     var xhr = new XMLHttpRequest();
     xhr.responseType='json';
-    xhr.open('GET', "populates.php", true);
+    xhr.open('GET', "populates", true);
     xhr.setRequestHeader('Content-Type','application/json');
     xhr.send();
 
@@ -33,7 +33,7 @@ $( document ).ready(function() {
 
             var xhr = new XMLHttpRequest();
             xhr.responseType = 'json';
-            xhr.open('POST', "query.php", true);
+            xhr.open('POST', "query", true);
             xhr.setRequestHeader('Content-Type', 'application/json');
             xhr.send(json);
 
@@ -55,7 +55,7 @@ $( document ).ready(function() {
         }
     }
 
-    Offline.options = {checks: {xhr: {url: '/VTA/index.html'}}};
+    Offline.options = {checks: {xhr: {url: '/VTA/'}}};
 
     $('#invia').click(function (event) {
 
@@ -77,13 +77,11 @@ $( document ).ready(function() {
 
             var xhr = new XMLHttpRequest();
             xhr.responseType='json';
-            xhr.open('POST', "query.php", true);
+            xhr.open('POST', "query", true);
             xhr.setRequestHeader('Content-Type','application/json');
             xhr.send(JSON.stringify(jsontest));
 
-            xhr.onreadystatechange = processRequest;
-
-            function processRequest(e) {
+            xhr.onreadystatechange = function (e) {
                 if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 304)) {
 
                     var response = xhr.response;
@@ -123,7 +121,7 @@ $( document ).ready(function() {
 
         var xhr = new XMLHttpRequest();
         xhr.responseType='json';
-        xhr.open('GET', "table.php", true);
+        xhr.open('GET', "table", true);
         xhr.setRequestHeader('Content-Type','application/json');
         xhr.send();
 

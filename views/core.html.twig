@@ -1,7 +1,3 @@
-<?php session_start();
-if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not authorized");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,7 +58,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
                         </tr>
                         </thead>
                         <tbody id="body_tabella">
-                            
+
                         </tbody>
                     </table>
 
@@ -78,7 +74,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
 
         <div class="row" id="home_section">
 
-            
+
             <div id="informazioni_generali" class="col-md-4 col-sm-6">
                 <div class="panel panel-success">
                     <div class="panel-heading">
@@ -151,185 +147,185 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
             </div>
 
             <div id="caratteri_generali" class="col-md-4 col-sm-6">
-                            <div class="panel panel-success">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">CARATTERI GENERALI</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="form-group  module-content">
-                                        <label class="control-label">MONUMENTALE</label>
-                                        <input type="number" min="0" max="5" pattern="[0-5]" class="form-control" name="monumentale">
-                                    </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">CARATTERI GENERALI</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group  module-content">
+                            <label class="control-label">MONUMENTALE</label>
+                            <input type="number" min="0" max="5" pattern="[0-5]" class="form-control" name="monumentale">
+                        </div>
 
-                                    <div class="form-group  module-content">
-                                        <label class="control-label">MATURO</label>
+                        <div class="form-group  module-content">
+                            <label class="control-label">MATURO</label>
 
-                                        <input type="number" class="form-control" name="maturo">
-                                    </div>
+                            <input type="number" class="form-control" name="maturo">
+                        </div>
 
-                                    <div class="form-group  module-content">
-                                        <label class="control-label">ADULTO</label>
-                                        <input type="number" class="form-control" name="adulto">
-                                    </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">ADULTO</label>
+                            <input type="number" class="form-control" name="adulto">
+                        </div>
 
-                                    <div class="form-group  module-content">
-                                        <label class="control-label">NEOIMPIANTO</label>
-                                        <input type="number" class="form-control" name="neo_impianto">
-                                    </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">NEOIMPIANTO</label>
+                            <input type="number" class="form-control" name="neo_impianto">
+                        </div>
 
-                                    <div class="form-group  module-content">
-                                        <label class="control-label">CEPPAIA/SEDE VUOTA</label>
-                                        <input type="number" class="form-control" name="ceppaia_sede_vuota">
-                                    </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">CEPPAIA/SEDE VUOTA</label>
+                            <input type="number" class="form-control" name="ceppaia_sede_vuota">
+                        </div>
 
-                                    <div class="form-group  module-content">
-                                        <label class="control-label">MORTA</label>
-                                        <input type="number" class="form-control" name="morta">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">MORTA</label>
+                            <input type="number" class="form-control" name="morta">
+                        </div>
+                    </div>
                 </div>
+            </div>
 
             <div id="castello" class="col-md-4 col-sm-6 hidden">
-                                <div class="panel panel-success">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">CASTELLO</h3>
-                                    </div>
-                                    <div class="panel-body">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">CASTELLO</h3>
+                    </div>
+                    <div class="panel-body">
 
-                                        <div class="form-group  module-content">
-                                            <label class="control-label">CARPOFORO/I</label>
-                                            <input type="number" class="form-control" name="carpofori_castello">
-                                        </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">CARPOFORO/I</label>
+                            <input type="number" class="form-control" name="carpofori_castello">
+                        </div>
 
-                                        <div class="form-group  module-content">
-                                            <label class="control-label">CAVITA ESPOSTE</label>
+                        <div class="form-group  module-content">
+                            <label class="control-label">CAVITA ESPOSTE</label>
 
-                                            <input type="number" class="form-control" name="cavita_esposte_castello">
-                                        </div>
+                            <input type="number" class="form-control" name="cavita_esposte_castello">
+                        </div>
 
-                                        <div class="form-group  module-content">
-                                            <label class="control-label">CAVITA OCCULTA</label>
-                                            <input type="number" class="form-control" name="cavita_occulta_castello">
-                                        </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">CAVITA OCCULTA</label>
+                            <input type="number" class="form-control" name="cavita_occulta_castello">
+                        </div>
 
-                                        <div class="form-group  module-content">
-                                            <label class="control-label">CODOMIN.CORT.INCLUSA/I</label>
-                                            <input type="number" class="form-control" name="codominio_corteccia_inclusa_castello">
-                                        </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">CODOMIN.CORT.INCLUSA/I</label>
+                            <input type="number" class="form-control" name="codominio_corteccia_inclusa_castello">
+                        </div>
 
-                                        <div class="form-group  module-content">
-                                            <label class="control-label">ESSUDATI</label>
+                        <div class="form-group  module-content">
+                            <label class="control-label">ESSUDATI</label>
 
-                                            <input type="number" class="form-control" name="essudati_castello">
-                                        </div>
+                            <input type="number" class="form-control" name="essudati_castello">
+                        </div>
 
-                                        <div class="form-group  module-content">
-                                            <label class="control-label">FERITE DA TAGLIO APERTE</label>
-                                            <input type="number" class="form-control" name="ferite_da_taglio_aperte_castello">
-                                        </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">FERITE DA TAGLIO APERTE</label>
+                            <input type="number" class="form-control" name="ferite_da_taglio_aperte_castello">
+                        </div>
 
-                                        <div class="form-group  module-content">
-                                            <label class="control-label">FERITE DA TAGLIO MARCESCENTI</label>
-                                            <input type="number" class="form-control" name="ferite_da_taglio_marcescenti_castello">
-                                        </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">FERITE DA TAGLIO MARCESCENTI</label>
+                            <input type="number" class="form-control" name="ferite_da_taglio_marcescenti_castello">
+                        </div>
 
-                                        <div class="form-group  module-content">
-                                            <label class="control-label">FERITE RIMARGINATE</label>
+                        <div class="form-group  module-content">
+                            <label class="control-label">FERITE RIMARGINATE</label>
 
-                                            <input type="number" class="form-control" name="ferite_rimarginate_castello">
-                                        </div>
+                            <input type="number" class="form-control" name="ferite_rimarginate_castello">
+                        </div>
 
-                                        <div class="form-group  module-content">
-                                            <label class="control-label">FESSURAZIONI</label>
-                                            <input type="number" class="form-control" name="fessurazioni_castello">
-                                        </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">FESSURAZIONI</label>
+                            <input type="number" class="form-control" name="fessurazioni_castello">
+                        </div>
 
-                                        <div class="form-group  module-content">
-                                            <label class="control-label">CAVITA OCCULTA/ORIFIZI</label>
-                                            <input type="number" class="form-control" name="cavita_occulta_orifizi_castello">
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">CAVITA OCCULTA/ORIFIZI</label>
+                            <input type="number" class="form-control" name="cavita_occulta_orifizi_castello">
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
             <div id="chioma" class="col-md-4 col-sm-6 hidden" >
-                                    <div class="panel panel-success">
-                                        <div class="panel-heading">
-                                            <h3 class="panel-title">CHIOMA</h3>
-                                        </div>
-                                        <div class="panel-body">
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">BRANCHE CAPITOZZATE</label>
-                                                <input type="number" class="form-control" name="branche_capitozzate_chioma">
-                                            </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">CHIOMA</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group  module-content">
+                            <label class="control-label">BRANCHE CAPITOZZATE</label>
+                            <input type="number" class="form-control" name="branche_capitozzate_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">BRANCHE/CHIOMA ASIMM.</label>
+                        <div class="form-group  module-content">
+                            <label class="control-label">BRANCHE/CHIOMA ASIMM.</label>
 
-                                                <input type="number" class="form-control" name="branche_chioma_asimmetrica_chioma">
-                                            </div>
+                            <input type="number" class="form-control" name="branche_chioma_asimmetrica_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">BRANCHE PERICOLANTI</label>
-                                                <input type="number" class="form-control" name="branche_pericolanti_chioma">
-                                            </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">BRANCHE PERICOLANTI</label>
+                            <input type="number" class="form-control" name="branche_pericolanti_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">CARPOFORI</label>
-                                                <input type="number" class="form-control" name="carpofori_chioma">
-                                            </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">CARPOFORI</label>
+                            <input type="number" class="form-control" name="carpofori_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">CAVITA ESPOSTA/CARIE</label>
+                        <div class="form-group  module-content">
+                            <label class="control-label">CAVITA ESPOSTA/CARIE</label>
 
-                                                <input type="number" class="form-control" name="cavita_esposta_carie_chioma">
-                                            </div>
+                            <input type="number" class="form-control" name="cavita_esposta_carie_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">CHIOMA FILATA</label>
-                                                <input type="number" class="form-control" name="chioma_filata_chioma">
-                                            </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">CHIOMA FILATA</label>
+                            <input type="number" class="form-control" name="chioma_filata_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">FILLOPTOSI DIFFUSA/SECCUME</label>
-                                                <input type="number" class="form-control" name="filloptosi_diffusa_seccume_chioma">
-                                            </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">FILLOPTOSI DIFFUSA/SECCUME</label>
+                            <input type="number" class="form-control" name="filloptosi_diffusa_seccume_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">FILLOPTOSI PARZIALE</label>
+                        <div class="form-group  module-content">
+                            <label class="control-label">FILLOPTOSI PARZIALE</label>
 
-                                                <input type="number" class="form-control" name="filloptosi_parziale_chioma">
-                                            </div>
+                            <input type="number" class="form-control" name="filloptosi_parziale_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">MONCONI</label>
-                                                <input type="number" class="form-control" name="monconi_chioma">
-                                            </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">MONCONI</label>
+                            <input type="number" class="form-control" name="monconi_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">MONCONI NECROTIZZATI</label>
-                                                <input type="number" class="form-control" name="monconi_necrotizzati_chioma">
-                                            </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">MONCONI NECROTIZZATI</label>
+                            <input type="number" class="form-control" name="monconi_necrotizzati_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">ORIFIZI-CAVITA</label>
+                        <div class="form-group  module-content">
+                            <label class="control-label">ORIFIZI-CAVITA</label>
 
-                                                <input type="number" class="form-control" name="orifizi_cavita_chioma">
-                                            </div>
+                            <input type="number" class="form-control" name="orifizi_cavita_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">SPIOMBATURA FUORI ASSE</label>
-                                                <input type="number" class="form-control" name="spiombatura_fuori_asse_chioma">
-                                            </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">SPIOMBATURA FUORI ASSE</label>
+                            <input type="number" class="form-control" name="spiombatura_fuori_asse_chioma">
+                        </div>
 
-                                            <div class="form-group  module-content">
-                                                <label class="control-label">SPIOMBATURA IN ASSE</label>
-                                                <input type="number" class="form-control" name="spiombatura_in_asse_chioma">
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="form-group  module-content">
+                            <label class="control-label">SPIOMBATURA IN ASSE</label>
+                            <input type="number" class="form-control" name="spiombatura_in_asse_chioma">
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
