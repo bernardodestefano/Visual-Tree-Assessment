@@ -11,11 +11,11 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title> VTA </title>
-    <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/offlinejs.css">
     <link rel="stylesheet" href="css/offlinejs_language_italian.css">
+    <link rel="stylesheet" href="css/core.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/offlinejs.js"></script>
@@ -24,26 +24,33 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
 </head>
 <body>
 
+
+
+<div class="jumbotron">
+    <div class="container">
+        <h2 class="text-center"> SCHEDA DI VALUTAZIONE VTA </h2>
+    </div>
+</div>
+
+<nav class="navbar navbar-default" style="margin-top: -30px">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> VTA
+            </a>
+        </div>
+      <ul class="nav navbar-nav navbar-left">
+          <li id="home_button" role="presentation" class="active"><a href="#">Nuova Scheda</a></li>
+          <li id="gestione_button" role="presentation"><a href="#">Gestione</a></li>
+      </ul>
+    </div>
+</nav>
+
 <div class="container-fluid">
-
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center"> SCHEDA DI VALUTAZIONE VTA </h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <ul class="nav nav-pills">
-                <li id="home_button" role="presentation" class="active"><a>Home</a></li>
-                <li id="gestione_button" role="presentation"><a>Gestione</a></li>
-            </ul>
-        </div>
-    </div>
 
     <div class="row hidden" id="gestione_section" >
         <div class="col-lg-12 ">
-            <div class="panel panel-info">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">GESTIONE VTA</h3>
                 </div>
@@ -62,7 +69,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
                         </tr>
                         </thead>
                         <tbody id="body_tabella">
-                            
+
                         </tbody>
                     </table>
 
@@ -78,9 +85,9 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
 
         <div class="row" id="home_section">
 
-            
+
             <div id="informazioni_generali" class="col-md-4 col-sm-6">
-                <div class="panel panel-success">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">INFORMAZIONI GENERALI</h3>
                     </div>
@@ -122,7 +129,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
 
             <div id="dati_dimensione_pianta" class="col-md-4 col-sm-6">
 
-                <div class="panel panel-success">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">DATI DIMENSIONE PIANTA</h3>
                     </div>
@@ -151,7 +158,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
             </div>
 
             <div id="caratteri_generali" class="col-md-4 col-sm-6">
-                            <div class="panel panel-success">
+                            <div class="panel panel-primary">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">CARATTERI GENERALI</h3>
                                 </div>
@@ -191,7 +198,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
                 </div>
 
             <div id="castello" class="col-md-4 col-sm-6 hidden">
-                                <div class="panel panel-success">
+                                <div class="panel panel-primary">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">CASTELLO</h3>
                                     </div>
@@ -255,7 +262,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
             </div>
 
             <div id="chioma" class="col-md-4 col-sm-6 hidden" >
-                                    <div class="panel panel-success">
+                                    <div class="panel panel-primary">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">CHIOMA</h3>
                                         </div>
@@ -335,7 +342,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
 
             <div id="esame_strumentale" class="col-md-4 col-sm-6 hidden">
 
-                <div class="panel panel-success">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">ESAME STRUMENTALE</h3>
                     </div>
@@ -370,7 +377,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
 
             <div id="tipologia_pavimentazione" class="col-md-4 col-sm-6 hidden">
 
-                <div class="panel panel-success">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">TIPOLOGIA PAVIMENTAZIONE</h3>
                     </div>
@@ -413,7 +420,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
 
             <div id="bersaglio" class="col-md-4 col-sm-6 hidden">
 
-                <div class="panel panel-success">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">BERSAGLIO</h3>
                     </div>
@@ -642,7 +649,7 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
 
             <div id="colletto" class="col-md-4 col-sm-6 hidden">
 
-                <div class="panel panel-success">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">COLLETTO</h3>
                     </div>
@@ -805,9 +812,13 @@ if (!isset($_SESSION['user_name'], $_SESSION['user_password'])) die("You are not
         <div class="row" id="nav_buttons">
             <div class="col-md-12 text-center" >
                 <ul class="pager ">
-                    <li id="previous" class="previous hidden"><a>&larr; Previous</a></li>
-                    <li><input id="invia" type="submit" value="invia" class="btn btn-primary btn-lg "></li>
-                    <li id="next" class="next"><a>Next &rarr;</a></li>
+                    <li id="previous" class="previous hidden"><a>&larr; Precedente</a></li>
+                    <li>
+                        <button id="invia" type="submit" class="btn btn-primary btn-lg">
+                              <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Salva
+                        </button>
+                    </li>
+                    <li id="next" class="next"><a>Successivo &rarr;</a></li>
                 </ul>
             </div>
         </div>

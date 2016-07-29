@@ -17,7 +17,7 @@ $( document ).ready(function() {
             });
         }
     }
-    
+
 
     function uploadLocalStorage()
     {
@@ -111,6 +111,9 @@ $( document ).ready(function() {
         $('#nav_buttons').removeClass('hidden');
         $('#gestione_section').addClass('hidden');
 
+        $('#home_button').addClass('active');
+        $('#gestione_button').removeClass('active');
+
     });
 
     $('#gestione_button').click(function () {
@@ -118,6 +121,9 @@ $( document ).ready(function() {
         $('#home_section').addClass('hidden');
         $('#nav_buttons').addClass('hidden');
         $('#gestione_section').removeClass('hidden');
+
+        $('#home_button').removeClass('active');
+        $('#gestione_button').addClass('active');
 
         $('#body_tabella').empty();
 
@@ -216,4 +222,3 @@ $( document ).ready(function() {
     });
 
 });
-
